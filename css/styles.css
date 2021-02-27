@@ -1,0 +1,70 @@
+* {
+	font-family: Consolas, Menlo, Monospace;
+	font-size: 16px;
+}
+
+body {
+	max-width: 100ch;
+	margin: 0 auto;
+	padding-left: 2%;
+	padding-right: 2%;
+	background: #F5F5F0;
+}
+
+@media (max-width: 500px) {
+	* {
+		font-size: 12px;
+	}
+}
+
+header a {
+	text-decoration: none;
+}
+
+div.center {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div.center div {
+	margin: auto;
+	display: inline-block;
+}
+
+h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+p + * {
+	margin-top: 4ch;
+	margin-bottom: 0;
+}
+
+p + p {
+	margin-top: 2ch;
+	margin-bottom: 0;
+}
+
+a {
+	color: inherit;
+	font-weight: bold;
+}
+
+img {
+	width: 100%;
+	border: solid 1px;
+}
+
+sup a {
+	font-size: 0.65em;
+	text-decoration: none;
+}
+
+a.footnote-ref::before {
+	content: "[";
+}
+
+a.footnote-ref::after {
+	content: "]";
+}
