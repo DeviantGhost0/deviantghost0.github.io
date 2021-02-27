@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+<h1>Articles</h1>
+<hr>
+{{ with .Site.Menus.posts }}
+{{ range sort . "Page.PublishDate" "desc" }}
+{{ .Page.PublishDate.Format "02/01/2006" }}: <a href="{{ .URL }}">{{ .Title }}</a>
+{{ end }}
+{{ end }}
+{{ end }}
